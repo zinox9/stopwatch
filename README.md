@@ -2,7 +2,7 @@
 
 # StopWatch
 
-> #### A mini stopwatch.Press "Spacebar" to Start/Pause and "Enter" to Reset
+> #### A Mini Stopwatch. Press "Spacebar" to Start/Pause and "Enter" to Reset
 
 ---
 
