@@ -16,7 +16,7 @@
 
 ---
 
-:globe_with_meridians: **[Live Website](mstop.netlify.app)**
+:globe_with_meridians: **[Live Website](https://mstop.netlify.app)**
 
 **Made with :heart: by Arjun.**
 
