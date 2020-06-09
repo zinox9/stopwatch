@@ -98,35 +98,47 @@ body {
    }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
    html {
       font-size: 10px;
    }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 760px) {
    html {
       font-size: 8px;
    }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 610px) {
    html {
       font-size: 6px;
    }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 470px) {
    html {
       font-size: 4px;
+   }
+
+   #title {
+      font-size: 3.7rem;
+   }
+
+   .button {
+      margin: 5rem 2.5rem;
+      padding: 1.2rem 5rem;
+      font-size: 4.5rem;
    }
 }
 @media only screen and (max-width: 300px) {
    html {
       font-size: 3px;
    }
+}
 
-   .button {
-      margin: 4rem 2rem;
+@media only screen and (max-width: 240px) {
+   #counter {
+      font-size: 10rem;
    }
 }
