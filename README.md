@@ -9,7 +9,7 @@
 -  **Pure CSS**
 -  **Vanilla JS**
    -  SetInterval
-   -  Throttle - handle continuos clicks
+   -  Throttle - handle continuous clicks
 -  **HTML**
 
 ---
