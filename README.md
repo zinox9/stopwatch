@@ -1,6 +1,6 @@
 # StopWatch
 
-> #### A Mini Stopwatch. Press "Spacebar" to Start/Pause and "Enter" to Reset
+> #### A Mini Stopwatch. Press "Spacebar" to Start/Pause and "Enter" to Reset. Also Work as Progressive Web App (PWA).
 
 ---
 
@@ -11,6 +11,7 @@
    -  SetInterval
    -  Throttle - handle continuous clicks
 -  **HTML**
+-  **Progressive Web App (PWA) Enabled**
 
 ---
 

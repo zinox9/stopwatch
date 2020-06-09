@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <script>
+         if (location.protocol != "https:") {
+            location.href =
+               "https:" +
+               window.location.href.substring(window.location.protocol.length);
+         }
+      </script>
       <meta charset="UTF-8" />
+      <meta
+         name="Description"
+         content="A Mini Stopwatch. Press Spacebar to Start/Pause and Enter to Reset. Also Work as Progressive Web App (PWA)"
+      />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-------------------------------------------FONT Families--------------------------------------->
       <link
          href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
          rel="stylesheet"
@@ -15,9 +28,49 @@
          href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
          rel="stylesheet"
       />
-      <link rel="icon" type="image/png" href="/favicon.png" />
+
+      <!-------------------------------------------Favicons--------------------------------------->
+
+      <link
+         rel="apple-touch-icon"
+         sizes="180x180"
+         href="/favicons/apple-touch-icon.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="/favicons/favicon-32x32.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="16x16"
+         href="/favicons/favicon-16x16.png"
+      />
+      <link
+         rel="mask-icon"
+         href="/favicons/safari-pinned-tab.svg"
+         color="#5bbad5"
+      />
+      <meta name="theme-color" content="#ffffff" />
+      <link rel="icon" type="image/png" href="/favicons/favicon.png" />
+
+      <meta name="apple-mobile-web-app-title" content="Stopwatch" />
+      <meta name="application-name" content="Stopwatch" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="msapplication-TileColor" content="#97d2da" />
+      <meta
+         name="msapplication-TileImage"
+         content="/favicons/mstile-150x150.png"
+      />
+
+      <link rel="manifest" href="site.webmanifest" />
+
+      <!-- Other Links -->
       <link rel="stylesheet" href="./style.css" />
-      <title>StopWatch</title>
+      <title>Stopwatch</title>
    </head>
    <body>
       <h1 id="title">StopWatch</h1>
@@ -30,5 +83,25 @@
          <button id="reset" class="button">Reset</button>
       </div>
       <script src="./script.js"></script>
+      <script>
+         if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+               navigator.serviceWorker.register("/sw.js").then(
+                  function (registration) {
+                     // Registration was successful
+                     registration.update();
+                     console.log(
+                        "ServiceWorker registration successful with scope: ",
+                        registration.scope
+                     );
+                  },
+                  function (err) {
+                     // registration failed
+                     console.log("ServiceWorker registration failed: ", err);
+                  }
+               );
+            });
+         }
+      </script>
    </body>
 </html>
