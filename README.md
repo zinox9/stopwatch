@@ -1,5 +1,3 @@
-![Icon](./favicon.png)
-
 # StopWatch
 
 > #### A Mini Stopwatch. Press "Spacebar" to Start/Pause and "Enter" to Reset
