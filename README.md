@@ -18,6 +18,6 @@
 
 :globe_with_meridians: **[Live Website](https://mstop.netlify.app)**
 
-**Made with :heart: by Arjun.**
+**Made with :heart: by Arjun & [Paras](https://github.com/paras594).**
 
 ---
